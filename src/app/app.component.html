@@ -8,7 +8,7 @@
   </tr>
 </thead>
 <tbody>
-  <tr *ngFor="let item of userData">
+  <tr *ngAfterViewInit="let item of userData">
     <th>&#123;&#123; item.id &#125;&#125;</th>
     <td>&#123;&#123; item.company.name &#125;&#125;</td>
     <td>&#123;&#123; item.address.geo.lng &#125;&#125;</td>
@@ -16,4 +16,4 @@
   </tr>
 </tbody>
 </table>
-<hr>
+<hr><div id="map"></div>
